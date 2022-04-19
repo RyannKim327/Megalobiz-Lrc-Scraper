@@ -1,4 +1,4 @@
-# Megalobiz-Lrc-Scraper
+# Megalobiz-Lrc-Scraper/Downloader
 Megalobiz Lrc Scraper was made with use of axios and cheerio
 
 # Note
