@@ -1,6 +1,6 @@
 const axios = require("axios");
 const cheerio = require('cheerio');
-
+const fs = require("fs");
 
 const url = "https://www.megalobiz.com/search/all?qry=Test";
     const { data } = await axios.get(url);
