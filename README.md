@@ -8,7 +8,7 @@ In your nodejs you need to have an Axios, Cheerio and fs npm module Installed fi
 "https://www.megalobiz.com/lrc/maker/download-music-lyrics-lrc-generated-files"
 
 # Query Input
-"https://www.megalobiz.com/Search/all?qry="
+"https://www.megalobiz.com/Search/all?qry=Test"
 
 change "Test" into your input string
 
