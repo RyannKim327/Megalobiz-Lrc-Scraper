@@ -15,3 +15,146 @@ change "Test" into your input string
 
 # For Usage
 Check out the usage.js
+
+#Sample Promise Response
+[
+  {
+    data: '[length:04:07.70]\n' +
+      '[re:www.megalobiz.com/lrc/maker]\n' +
+      '[ve:v1.2.3]\n' +
+      '[00:05.73]Ek lógou állos ekvaínei lógos\n' +
+      '[00:05.73]One word brings another\n' +
+      '[00:09.46]\n' +
+      '[00:24.72]Minamo ni utsuru jibun ga itta\n' +
+      '[00:24.72]My reflection in the water says to me\n' +
+      '[00:32.73]"Aa, watashi wa warui same desu"\n' +
+      "[00:32.73]Oh my god, you're such a bad shark\n" +
+      '[00:40.22]Zutto osoreteita\n' +
+      '[00:40.22]Her terrifying gaze (Ooh),\n' +
+      '[00:43.97]Akaku hikaru sono me\n' +
+      '[00:43.97]her glowing red eyes\n' +
+      '[00:47.23]Umi no soko kurayami ni kieteiku\n' +
+      '[00:47.23]Begins to sink into the void at the bottom of the sea\n' +
+      '[00:54.22]\n' +
+      '[00:54.23]Doushite (Your tired eyes)\n' +
+      '[00:54.23]Why (Your tired eyes)\n' +
+      '[00:56.48]Naku no yo (Begin to fall)\n' +
+      '[00:56.48]Do you cry? (Begin to fall)\n' +
+      '[00:58.23]Hoshii mono nara zenbu te ni ireta\n' +
+      '[00:58.23]I gave you everything you craved\n' +
+      '[01:01.98]Oshiete (Your darkest thoughts)\n' +
+      '[01:01.98]Tell me if (Your darkest thoughts)\n' +
+      '[01:03.98]Watashi wa (Unleash them all)\n' +
+      '[01:03.98]I can ever be (Unleash them all)\n' +
+      '[01:05.98]Nozondeita watashi ni nareta ka na\n' +
+      '[01:05.98]The me you wanted me to be\n' +
+      '[01:10.47]\n' +
+      '[01:10.48]Uso wa tsukanai demo hontou janai (Ah, ah)\n' +
+      '[01:10.48]No lies, but no truths either (Ah, ah)\n' +
+      '[01:14.47]Honne wa iwanai hou ga raku janai?\n' +
+      "[01:14.47]Isn't it easier to never say what you really mean?\n" +
+      '[01:17.73]Itsuka wa (A time and place)\n' +
+      '[01:17.73]But someday (A time and place)\n' +
+      '[01:19.48]Doko ka de (For darker days)\n' +
+      '[01:19.48]Somewhere (For darker days)\n' +
+      '[01:21.23]Wakari aeru toki ga kuru no?\n' +
+      '[01:21.23]Will we find someplace to understand each other?\n' +
+      '[01:26.04]\n' +
+      '[01:33.72]Look at this so-called “gem of the sea”\n' +
+      '[01:35.48]Odd and scrawny, you see what I mean?\n' +
+      "[01:37.47]Return to what you know, it ain't much I know\n" +
+      '[01:40.48]Heh, it shows\n' +
+      '[01:41.97]\n' +
+      '[01:41.98]Watashi wa anata to wa chigau no\n' +
+      "[01:41.98]I'm not like you\n" +
+      '[01:44.73]Yamete yo\n' +
+      '[01:44.73]Stop it,\n' +
+      '[01:45.47]Kimetsuke wa mou dai kirai (Dai kirai)\n' +
+      '[01:45.47]I hate the way you judge me (I hate it)\n' +
+      '[01:48.72]Risou no sugata janakute ii no\n' +
+      "[01:48.72]I don't need to conform to any ideals\n" +
+      '[01:51.23]Watashi rashiku areba\n' +
+      '[01:51.23]I just want to be myself\n' +
+      '[01:52.73]Tada wakatte hoshii dake yo\n' +
+      '[01:52.73]Just want to be understood\n' +
+      '[01:55.33]\n' +
+      '[01:56.48]Heh! Risoudoori janakya imi nante nai\n' +
+      "[01:56.48]Heh! If you don't conform, then why were you even born?\n" +
+      '[02:00.23]Kibou mo yume sura nakute\n' +
+      '[02:00.23]There are no hopes, no dreams,\n' +
+      '[02:02.48]Tsurai tsurai tsurai tsurai\n' +
+      '[02:02.48]just pain, pain, pain, pain\n' +
+      '[02:04.72]Anata rashisa\n' +
+      '[02:04.72]Be yourself?\n' +
+      '[02:06.47]Aru no kashira?\n' +
+      '[02:06.47]Do you even know who you are?\n' +
+      '[02:08.23]Akiramete raku ni narou\n' +
+      '[02:08.23]Give it up and just ride the waves\n' +
+      '[02:10.73]Saa\n' +
+      '[02:10.73]Just chill\n' +
+      '[02:12.34]\n' +
+      '[02:12.48]Zutto oimotometa watashi nari no kotae\n' +
+      "[02:12.48]I've been searching and searching, and found my own answer\n" +
+      '[02:19.48]Jibun ni wa uso wa tsukitakunai no\n' +
+      "[02:19.48]I won't lie to myself anymore​\n" +
+      '[02:26.71]\n' +
+      '[02:26.72]Gomen ne (One story ends)\n' +
+      "[02:26.72]I'm sorry (One story ends)\n" +
+      '[02:28.48]Ima made (Begin again)\n' +
+      '[02:28.48]All this time (Begin again)\n' +
+      '[02:30.47]Kizukanakatta koto ga aru n da kedo\n' +
+      "[02:30.47]I've been too blind to see\n" +
+      '[02:34.22]Koushite (While hand-in-hand)\n' +
+      "[02:34.22]I'm only here this way (While hand-in-hand)\n" +
+      '[02:36.23]Anata ga (Until the end)\n' +
+      '[02:36.23]Because of you (Until the end)\n' +
+      '[02:38.23]Itekureta kara ima no watashi ga iru\n' +
+      "[02:38.23]Because you've been there by my side\n" +
+      '[02:42.37]\n' +
+      '[02:42.98]Kako wa iranai? Sonna koto wa nai (Ah, ah)\n' +
+      "[02:42.98]The past isn't important? That's not true (Ah, ah)\n" +
+      '[02:46.98]Mirai wa mienai hou ga mashi janai?\n' +
+      "[02:46.98]A life that's unpredictable is so much brighter\n" +
+      '[02:49.72]Koko kara (No matter where)\n' +
+      '[02:49.72]From here on out (No matter where)\n' +
+      '[02:51.73]Shizuka ni (Watch over me)\n' +
+      '[02:51.73]Just watch quietly (Watch over me)\n' +
+      '[02:53.48]Watashi o mimamotteite ne\n' +
+      '[02:53.48]How I live my life\n' +
+      '[02:57.90]\n' +
+      '[02:59.47]So, you think that’s all, huh?​\n' +
+      "[03:02.73]Just gonna leave like it's nothing?\n" +
+      '[03:06.47]Going without me?\n' +
+      "[03:07.97](I don't know what you’re thinking!)\n" +
+      '[03:09.73]Return to the sea\n' +
+      "[03:10.98]A shark is all you'll ever be\n" +
+      '[03:12.71]\n' +
+      '[03:12.72]Sayonara (Our story ends)\n' +
+      '[03:12.72]Farewell (Our story ends)\n' +
+      '[03:14.73]Arigatou (Begin again)\n' +
+      '[03:14.73]Thank you (Begin again)\n' +
+      '[03:16.73]Kakushiteita watashi wa mou inai\n' +
+      "[03:16.73]I won't hide my heart's desires anymore\n" +
+      '[03:20.48]Sayonara (Once hand-in-hand)\n' +
+      '[03:20.48]Farewell (Once hand-in-hand)\n' +
+      '[03:22.48]Arigatou (Until the end)\n' +
+      '[03:22.48]Thank you (Until the end)\n' +
+      '[03:24.23]Subete ukeirete ikiteiku kara\n' +
+      "[03:24.23]I'll accept my everything and live\n" +
+      '[03:28.68]\n' +
+      '[03:29.23]Umi no soko wa tsumaranai kedo (Ah, ah)\n' +
+      '[03:29.23]The bottom of the sea is a boring place (Ah, ah)\n' +
+      '[03:32.73]Anata no koto wa wasurenai kara\n' +
+      "[03:32.73]But I'll keep you in my thoughts forever\n" +
+      '[03:35.98]Itsu demo (No matter where)\n' +
+      '[03:35.98]No matter when (No matter where)\n' +
+      '[03:37.73]Doko demo (Watch over me)\n' +
+      '[03:37.73]No matter where (Watch over me)\n' +
+      '[03:39.73]Watashi rashiku ikiteikou\n' +
+      "[03:39.73]I'll live life true to myself\n" +
+      '[03:44.44]\n' +
+      '[03:55.72]Oudén kakón amigés kaloú\n' +
+      '[03:55.72]Nothing bad is without something good'
+  }
+]
+
