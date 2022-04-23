@@ -16,5 +16,5 @@ change "Test" into your input string
 # For Usage
 Checkout the usage.js
 
-#Sample Promise Response
+# Sample Promise Response
 Checkout the output.txt
