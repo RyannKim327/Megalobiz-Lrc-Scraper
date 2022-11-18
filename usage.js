@@ -1,59 +1,49 @@
 // Loading the dependencies
 const axios = require("axios");
 const cheerio = require('cheerio');
-const fs = require("fs");
+//const fs = require("fs");
 
-//URL that we want to scrape
-const url = "https://www.megalobiz.com/search/all?qry=Test";
+let search = async (song) => {
+	// Get the HTML content
+	const { data } = await axios.get(`https://www.megalobiz.com/search/all?qry=${song.replace(/ /gi, "+")}`)
 
-// Fetch HTML of the page we want to scrape
-    const { data } = await axios.get(url);
+	// Load to cheerio
+	const $ = await cheerio.load(data)
 
-// Load the HTML we fetched
-    const $ = cheerio.load(data);
+	// Select all the list items in entity_full_member_image class
+	const listItems = $(".entity_full_member_image")
 
-// Select all the list items in entity_full_member_image class
-    const listItems = $(".entity_full_member_image");
+	// Initiate an array for multiple outputs
+	let arr = []
 
-// Stores data for all the Q
-  const Q = [];
+	// Loop all the values or content that .entity_full_member_image has
+	listItems.each((i, e) => {
+		const json = {}
 
-// Use .each method to loop through the entity_full_member_image class we selected
-  listItems.each((idx, el) => {
+		// Get the URL link
+		json.url = $(e).children("a")[0].attribs.href
 
-// Object holding data for each E
-    const E = {};
+		// Populate the array with the json content
+		arr.push(json)
+	})
+	return arr
+}
 
-// Select the text content of "a" elements and Store the textcontent in the above object
-    E.data = $(el).children("a")[0].attribs.href;
+let lyrics = async (urlID) => {
+	const { data } = await axios.get(`https://www.megalobiz.com${urlID}`)
+	const $ = await cheerio.load(data)
+	const list = $("[class='lyrics_details entity_more_info']")
+	let title = $('.profile_h1').text()
+	let arr = []
+	list.each((i, e) => {
+		const json = {}
+		json.data = $(e).children("span").text()
+		arr.push(json)
+	})
+	return arr
+}
 
-// Populate Q array with E data
-    Q.push(E);
-    });
-
-//logs the all the scraped data into the console
-//console.dir(Q)
-
-//here we get the value of Q put in the url
-  const newUrl = Q[0].data;
-  const Newurl = "https://www.megalobiz.com"+newUrl;
-
-//and repeat the steps above
-  const Data = await axios.get(Newurl);
-    const R = cheerio.load(Data.data);
-    const list = R("[class='lyrics_details entity_more_info']");
-  let title = R('.profile_h1');
-  const V = [];
-  list.each((idx, el) => {
-    const P = {};
-    P.data = R(el).children("span").text();
-    V.push(P);
-    });
-
-//writing a file with the contents of V[0].data
-  var Title = title.text();
-fs.writeFile("SharedFiles/music_lyrics.lrc",V[0].data, function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("The file was saved!");
+module.exports = async () => {
+	lyrics,
+	search
+}
