@@ -1,20 +1,53 @@
-# Megalobiz-Lrc-Scraper/Downloader
-Megalobiz Lrc Scraper was made with use of axios and cheerio
+# Megalobiz-Lrc-Scraper
+### Megalobiz Lrc Scraper was made with use of axios and cheerio
+---
 
-# Note
-In your nodejs you need to have an Axios, Cheerio and fs npm module Installed first to use this.
+# How to install (NodeJS)
+> npm i Megalobiz-Lrc-Scraper
 
-# Website Used
-https://www.megalobiz.com/lrc/maker/download-music-lyrics-lrc-generated-files
+---
 
-# Query Input
-inside the usage.js you will see this link
-https://www.megalobiz.com/Search/all?qry=Test
+# How to use (NodeJS):
+> Search
+``` NodeJS
+const lrc = require("Megalobiz-Lrc-Scraper")
 
-change "Test" into your input string
+(async () => {
+	let data = await lrc.search("Song Title")
+	console.log(data)
+})
+```
+> Output
+``` JSON
+[
+	{
+		"url": "sample link"
+	},
+	{ ... }
+]
+```
 
-# For Usage
-Checkout the usage.js
+---
 
-# Sample Promise Response
-Checkout the output.txt
+> Lyrics
+``` NodeJS
+const lrc = require("Megalobiz-Lrc-Scraper")
+
+(async () => {
+	let data = await lrc.lyrics("Song Url")
+	console.log(data)
+})
+```
+
+> Output
+``` JSON
+[
+	{
+		"data": "sample lyrics with time which is ready to download."
+	}
+]
+```
+
+---
+
+<h5 align="center">Documentation By RyannKim327</h5>
